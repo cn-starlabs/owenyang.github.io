@@ -1,0 +1,12 @@
+{% comment %}
+Simple reading time estimate: ~200 words per minute
+{% endcomment %}
+
+{% assign words_per_minute = 200 %}
+{% assign word_count = content | number_of_words %}
+{% assign minutes = word_count | divided_by: words_per_minute | ceil %}
+{% if minutes == 0 %}
+  < 1 min read
+{% else %}
+  {{ minutes }} min read
+{% endif %}
