@@ -1,18 +1,4 @@
 ---
----  /* These two lines are required so Jekyll processes the file */
-
-/* Hide "View on GitHub" button/link in header */
-.site-header a[href*="github.com"],
-.btn-github,
-.project-name a[href*="github.com"],
-header a.view-on-github {
-  display: none !important;
-}
-
-/* Hide the entire footer credits */
-footer,
-.site-footer,
-footer p,
-.page-footer {
-  display: none !important;
-}
+---
+footer, .site-footer { display: none !important; }
+.btn, a[href*="github.com"] { display: none !important; }
