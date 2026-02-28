@@ -1,1 +1,4 @@
 theme: jekyll-theme-modernist
+title: "WiKi"          # empty string → hides or greatly reduces the big title
+description: "Daily Notes from Quebec"   # optional – shows smaller below if you want some text
+show_downloads: false   # hides the "Download .zip/tar.gz" buttons if they're there
