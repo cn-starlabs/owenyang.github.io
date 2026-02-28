@@ -6,18 +6,6 @@ title: Home
 # Owen's Daily Notes
 
 Welcome to my little corner of the internet.  
-I write something (almost) every day.
-
-## Latest Posts
-
-<ul>
-  {% for post in site.posts limit: 10 %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <small> — {{ post.date | date: "%b %-d, %Y" }}</small>
-    </li>
-  {% endfor %}
-</ul>
 
 ## Latest Posts
 
