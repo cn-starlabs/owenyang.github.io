@@ -51,3 +51,21 @@ Rust 提供了完美的折中方案：接近 C/C++ 的速度 + 现代语言的�
 ```toml
 [dependencies]
 rssn = "0.2.7"
+```
+```
+use rssn::prelude::*;
+
+fn main() {
+    let x = symbol("x");
+    let expr = x.powi(2) + 3.0 * x + 5.0;
+    
+    let derivative = expr.diff(&x);
+    println!("导数: {}", derivative.pretty());
+    // 输出类似：2*x + 3
+}
+```
+更多示例和 API 文档请查看：
+
+- [crates.io](https://crates.io/crates/rssn)
+- [官方文档 (docs.rs)](https://docs.rs/rssn)
+- [GitHub 主仓库](https://github.com/Apich-Organization/rssn-project)
