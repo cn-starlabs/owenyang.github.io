@@ -1,6 +1,7 @@
-theme: jekyll-theme-modernist
-title: "WiKi"          # empty string → hides or greatly reduces the big title
-description: "Daily Notes from Quebec"   # optional – shows smaller below if you want some text
-show_downloads: false   # hides the "Download .zip/tar.gz" buttons if they're there
-github:
-  is_project_page: false   # sometimes reduces project-specific buttons
+remote_theme: "cotes2020/jekyll-theme-chirpy"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-archives
